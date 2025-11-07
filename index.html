@@ -1,88 +1,122 @@
-<div style="margin-top:30px; display:flex; gap:16px; flex-wrap:wrap;">
-
-  <!-- Link to Capabilities Page -->
-  <a href="/capabilities.html"
-     style="display:inline-block;padding:14px 22px;border-radius:8px;background:#111;color:#fff;
-            text-decoration:none;font-weight:600;font-size:16px;">
-    View Capabilities Page
-  </a>
-
-  <!-- Direct PDF Download Button -->
-  <a href="/Bravo-Seven-Capability-Statement.pdf" target="_blank"
-     style="display:inline-block;padding:14px 22px;border-radius:8px;background:#D4A017;color:#111;
-            text-decoration:none;font-weight:700;font-size:16px;">
-    Download Capability Statement (PDF)
-  </a>
-
-</div>
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bravo Seven Solutions, LLC</title>
+  <meta name="description" content="Bravo Seven Solutions — Federal contracting support: proposal, pricing, compliance, teaming." />
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; }
-    header, section, footer { padding: 20px; max-width: 900px; margin: auto; }
-    header { background: #f5f5f5; text-align: center; }
-    h1 { margin-top: 0; }
-    nav a { margin: 0 10px; text-decoration: none; color: #333; }
-    .section-title { font-size: 1.5em; margin-top: 40px; }
-    .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin: 10px 0; }
-    footer { background: #f5f5f5; text-align: center; font-size: 0.9em; }
-    .contact-block { background: #333; color: #fff; padding: 20px; border-radius: 8px; }
-    .contact-block a { color: #fff; }
+    :root {
+      --gold:#D4A017;
+      --black:#111111;
+      --text:#222222;
+      --muted:#666666;
+      --bg:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    a{color:var(--black);text-decoration:none}
+    .container{max-width:1080px;margin:0 auto;padding:0 16px}
+    /* Header */
+    header{border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:10}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+    .brand .dot{width:14px;height:14px;background:var(--gold);border-radius:3px;display:inline-block}
+    .menu{display:flex;gap:16px}
+    .menu a{font-weight:600}
+    .menu a:hover{text-decoration:underline}
+    /* Hero */
+    .hero{padding:64px 0 36px;background:linear-gradient(180deg,#fff 0,#fff 65%,#faf7ee 100%)}
+    .hero h1{font-size:34px;margin:0 0 10px}
+    .hero p{margin:0 0 18px;color:var(--muted)}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+    .btn{display:inline-block;padding:12px 18px;border-radius:10px;font-weight:700}
+    .btn-dark{background:var(--black);color:#fff}
+    .btn-gold{background:var(--gold);color:var(--black);border:2px solid var(--black)}
+    /* Divider */
+    .divider{height:1px;background:#eee;margin:28px 0}
+    /* Contact */
+    .card{max-width:760px;margin:0 auto 60px;background:#fff;border:1px solid #eee;border-radius:12px;padding:22px}
+    label{display:block;font-weight:600;margin:10px 0 4px}
+    input,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
+    textarea{resize:vertical}
+    .hint{font-size:12px;color:var(--muted)}
+    /* Footer */
+    footer{border-top:1px solid #eee;padding:20px 0;text-align:center;color:var(--muted);font-size:14px}
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Bravo Seven Solutions, LLC</h1>
-  <p>Federal Contracting & Restoration Consulting · SDVOSB Partner</p>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#industries">Industries</a>
-    <a href="#past">Past Performance</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <span>Bravo Seven Solutions, LLC</span>
+      </div>
+      <nav class="menu">
+        <a href="/index.html">Home</a>
+        <a href="/capabilities.html">Capabilities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<section id="services">
-  <div class="section-title">Services</div>
-  <div class="card"><strong>RFP Development & Compliance</strong><br>Technical volumes, pricing, certifications, portal submission.</div>
-  <div class="card"><strong>Cost & Pricing Models</strong><br>FCMM/Davis‑Bacon, GSA travel, markup policies, cost roll‑ups.</div>
-  <div class="card"><strong>Capture & Teaming Strategy</strong><br>SDVOSB teaming, strategy, and outreach support.</div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Full-cycle federal contracting support for prime and subcontractor teams.</h1>
+      <p>Proposal, pricing, compliance, and teaming strategy — helping organizations win, manage, and deliver federal contracts.</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="/capabilities.html">View Capabilities Page</a>
+        <a class="btn btn-gold" href="/Bravo-Seven-Capability-Statement.pdf" target="_blank" rel="noopener">Download Capability Statement (PDF)</a>
+      </div>
+    </div>
+  </section>
 
-<section id="industries">
-  <div class="section-title">Industries</div>
-  <ul>
-    <li>Federal & State Government</li>
-    <li>Restoration & Environmental Services</li>
-    <li>Utilities & Critical Infrastructure</li>
-  </ul>
-</section>
+  <div class="container">
+    <div class="divider"></div>
+  </div>
 
-<section id="past">
-  <div class="section-title">Representative Past Performance</div>
-  <ul>
-    <li>Library of Congress – Preservation/Recovery Support</li>
-    <li>GSA – Environmental & Restoration Task Orders</li>
-    <li>State & Local – Emergency response & abatement</li>
-  </ul>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="container">
+    <div class="card">
+      <h2 style="margin:0 0 8px">Contact Bravo Seven Solutions</h2>
+      <p class="hint" style="margin:0 0 18px">We’ll reply within one business day.</p>
 
-<section id="contact" class="contact-block">
-  <h2>Contact</h2>
-  <p>Scott Cornell – Managing Partner</p>
-  <p>Melbourne, Florida</p>
-  <p>Email: <a href="mailto:scott@bravosevensolutions.com">scott@bravosevensolutions.com</a></p>
-  <p>Phone: 717‑825‑9567</p>
-</section>
+      <form action="https://formspree.io/f/xyzbrvpz" method="POST">
+        <label>Name</label>
+        <input type="text" name="name" required />
 
-<footer>
-  <p>© 2025 Bravo Seven Solutions, LLC · SAM‑registered · SDVOSB eligible</p>
-</footer>
+        <label style="margin-top:12px">Email</label>
+        <input type="email" name="email" required />
+
+        <label style="margin-top:12px">Phone (optional)</label>
+        <input type="tel" name="phone" />
+
+        <label style="margin-top:12px">Message</label>
+        <textarea name="message" rows="6" required></textarea>
+
+        <!-- Subject line for your notification email -->
+        <input type="hidden" name="_subject" value="New contact from Bravo Seven Solutions" />
+        <!-- Redirect after submit (optional, add thanks.html if you want) -->
+        <input type="hidden" name="_next" value="/thanks.html" />
+        <!-- Honeypot to reduce spam -->
+        <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <button class="btn btn-dark" type="submit" style="margin-top:14px">Send Message</button>
+      </form>
+
+      <p class="hint" style="margin-top:10px">
+        By submitting this form you agree that Bravo Seven Solutions may store and process your information to respond to your inquiry.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © Bravo Seven Solutions, LLC • UEI: LGFEPT6LENZ3 • CAGE: 16E46
+  </footer>
 
 </body>
 </html>
