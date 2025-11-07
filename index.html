@@ -134,52 +134,42 @@
   </div>
 
   <!-- Contact -->
-  <section id="contact" class="container">
-    <div class="card">
-      <h2 style="margin:0 0 8px">Contact Bravo Seven Solutions</h2>
-      <p class="hint" style="margin:0 0 18px">We’ll reply within one business day.</p>
+ <!-- Contact -->
+<section id="contact" class="container">
+  <div class="card">
+    <h2 style="margin:0 0 8px">Contact Bravo Seven Solutions</h2>
+    <p class="hint" style="margin:0 0 18px">We’ll reply within one business day.</p>
 
-      <https:<form
-  action="https://formspree.io/f/mdkpqjqj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-        <input type="text" name="name" required />
+    <form action="https://formspree.io/f/mdkpqjqj" method="POST">
+      <label>Name</label>
+      <input type="text" name="name" required />
 
-        <label style="margin-top:12px">Email</label>
-        <input type="email" name="email" required />
+      <label style="margin-top:12px">Email</label>
+      <input type="email" name="email" required />
 
-        <label style="margin-top:12px">Phone (optional)</label>
-        <input type="tel" name="phone" />
+      <label style="margin-top:12px">Phone (optional)</label>
+      <input type="tel" name="phone" />
 
-        <label style="margin-top:12px">Message</label>
-        <textarea name="message" rows="6" required></textarea>
+      <label style="margin-top:12px">Message</label>
+      <textarea name="message" rows="6" required></textarea>
 
-        <!-- Subject line for your notification email -->
-        <input type="hidden" name="_subject" value="New contact from Bravo Seven Solutions" />
-        <!-- Redirect after submit (optional, add thanks.html if you want) -->
-        <input type="hidden" name="_next" value="/thanks.html" />
-        <!-- Honeypot to reduce spam -->
-        <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
+      <!-- Subject line for your notification email -->
+      <input type="hidden" name="_subject" value="New contact from Bravo Seven Solutions" />
+      <!-- Redirect after submit (optional if you have thanks.html) -->
+      <input type="hidden" name="_next" value="/thanks.html" />
+      <!-- Honeypot to reduce spam -->
+      <input type="text" name="company" style="display:none" tabindex="-1" autocomplete="off" />
 
-        <button class="btn btn-dark" type="submit" style="margin-top:14px">Send Message</button>
-      </form>
+      <button class="btn btn-dark" type="submit" style="margin-top:14px" id="sendBtn">
+        Send Message
+      </button>
+    </form>
 
-      <p class="hint" style="margin-top:10px">
-        By submitting this form you agree that Bravo Seven Solutions may store and process your information to respond to your inquiry.
-      </p>
-    </div>
-  </section>
+    <p class="hint" style="margin-top:10px">
+      By submitting this form you agree that Bravo Seven Solutions may store and process your information to respond to your inquiry.
+    </p>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer>
